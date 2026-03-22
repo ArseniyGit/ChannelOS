@@ -1,0 +1,60 @@
+.privacy-button-container {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.privacy-button {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  max-width: 400px;
+  width: 100%;
+  justify-content: center;
+}
+
+.privacy-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.privacy-button:active {
+  transform: translateY(0);
+}
+
+.privacy-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.privacy-text {
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 480px) {
+  .privacy-button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .privacy-icon {
+    font-size: 14px;
+  }
+}
+

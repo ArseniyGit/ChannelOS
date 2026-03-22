@@ -1,0 +1,30 @@
+[project]
+name = "tg-channel-miniapp"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.16.5",
+    "aiosqlite>=0.21.0",
+    "aiogram>=3.22.0",
+    "asyncpg>=0.30.0",
+    "celery[redis]>=5.5.3",
+    "fastapi>=0.120.0",
+    "httpx>=0.28.1",
+    "greenlet>=3.2.4",
+    "pydantic-settings>=2.11.0",
+    "python-multipart>=0.0.20",
+    "redis>=5.2.1",
+    "sqlalchemy>=2.0.44",
+    "stripe>=11.6.0",
+    "telegram-webapp-auth>=3.0.6",
+    "uvicorn>=0.38.0",
+]
+
+[dependency-groups]
+dev = [
+    "isort>=7.0.0",
+    "pytest>=8.4.2",
+    "pytest-asyncio>=1.2.0",
+    "ruff>=0.14.4",
+]
